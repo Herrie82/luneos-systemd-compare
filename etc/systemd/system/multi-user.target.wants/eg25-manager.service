@@ -1,0 +1,12 @@
+[Unit]
+Description=Start/Stop EG25 WWAN module
+Requires=dbus.service
+Before=ofono.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/eg25manager
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,2 @@
+enable configurator-activity.service
+enable configurator-db8.service

@@ -1,0 +1,2 @@
+enable settings-service-recovery.service
+enable settings-service.service
