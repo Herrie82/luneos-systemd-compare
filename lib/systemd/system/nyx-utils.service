@@ -1,4 +1,4 @@
-# Copyright (c) 2017-2018 LG Electronics, Inc.
+# Copyright (c) 2019-2023 LG Electronics, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,11 +17,11 @@
 # Create device and os information by nyx-cmd
 
 [Unit]
-Description=webos - "%n"
+Description=meta-webos - "%n"
 
 [Service]
 Type=oneshot
-ExecStartPre=/bin/mkdir -p /var/run/nyx
+ExecStartPre=-/bin/mkdir -p /var/run/nyx
 ExecStart=/bin/sh -euc 'nyx-cmd DeviceInfo query --format=json > /var/run/nyx/device_info.json'
 ExecStart=/bin/sh -euc 'nyx-cmd OSInfo query --format=json > /var/run/nyx/os_info.json'
 RemainAfterExit=yes

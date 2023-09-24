@@ -1,0 +1,4 @@
+enable lsm-ready.path
+enable lsm-ready.service
+enable lsm-ready.target
+enable surface-manager.service

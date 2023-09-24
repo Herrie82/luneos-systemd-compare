@@ -1,0 +1,5 @@
+enable db8-maindb.service
+enable db8-mediadb.service
+enable db8-pre-config.service
+enable db8-tempdb.service
+enable db8.service
